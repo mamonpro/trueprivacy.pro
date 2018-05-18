@@ -1,0 +1,96 @@
+.b-policy {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 4;
+  transition: transform .2s ease-out, opacity .2s ease-out, visibility .2s ease-out;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
+  visibility: visible;
+}
+
+.b-policy.__hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.b-policy_top {
+  top: 0;
+}
+
+.b-policy_top.__hide {
+  transform: translateY(-60px);
+}
+
+.b-policy_bottom {
+  bottom: 0;
+}
+
+.b-policy_bottom.__hide {
+  transform: translateY(60px);
+}
+
+.b-policy__close {
+  position: absolute;
+  width: 20px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: opacity .25s ease-out;
+  opacity: .6;
+}
+
+.b-policy__close:hover {
+  opacity: .8;
+}
+
+.b-policy__close svg {
+  display: block;
+  width: 100%;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.b-policy__inner {
+  padding: 40px 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b-policy__inner_align-center {
+  justify-content: center;
+}
+
+.b-policy__text {
+  display: inline-flex;
+  padding-right: 50px
+}
+
+.b-policy__heading {
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.b-policy__link {
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  transition: border-bottom .25s ease-out;
+}
+
+.b-policy__link:hover {
+  border-bottom: 1px solid rgba(0,0,0,.4);
+}
+
+.b-policy__button {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+
+  font-size: 16px;
+  cursor: pointer;
+}
